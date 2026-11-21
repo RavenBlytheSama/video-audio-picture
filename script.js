@@ -101,10 +101,10 @@
 
     try {
       // 使用全局 createFFmpeg + fetchFile（单线程 core，无需 COOP/COEP）
-      const { createFFmpeg } = FFmpeg;
+     const { createFFmpeg } = FFmpeg;
 const ffmpeg = createFFmpeg({ 
   log: true,
-  coreURL: 'core.wasm'
+  coreURL: 'https://cdn.jsdelivr.net/npm/@ffmpeg/core@0.12.0/dist/umd/ffmpeg-core.wasm'
 });
 
 setProg(progFillVideo, progPercentVideo, progDetailVideo, 15, '下载 core…');
